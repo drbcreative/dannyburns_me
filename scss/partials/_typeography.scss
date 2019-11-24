@@ -1,0 +1,54 @@
+$font-primary: 'Open Sans',
+sans-serif;
+
+$font-secondary: 'Lato',
+sans-serif;
+
+h1 {
+  font-family: $font-secondary;
+  font-size: 4.375rem;
+  line-height: 4.375rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 3.4375rem;
+  line-height: 3.4375rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: $font-secondary;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+.body-copy {
+  font-family: $font-primary;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+
+.project-title {
+  font-family: $font-secondary;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.project-description {
+  font-family: $font-secondary;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+
+.project-footer {
+  font-family: $font-primary;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
