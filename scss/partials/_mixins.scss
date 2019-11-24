@@ -1,0 +1,34 @@
+/* Med Breakpoint */
+@mixin isMedium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+/* Large Breakpoint */
+@mixin isLarge {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+/* X-Large Breakpoint */
+@mixin isXLarge {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+/* Retina Breakpoint */
+@mixin isRetina {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+/* Giant (iMac Status) Breakpoint */
+@mixin isGiant {
+  @media screen and (min-width: 2000px) {
+    @content;
+  }
+}
