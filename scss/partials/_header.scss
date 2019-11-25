@@ -1,5 +1,40 @@
 .nav-wrapper {
-  background: transparent;
-  height: 75px;
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  z-index: 999999;
+
+  .menu-toggle {
+    display: none;
+    padding: 0 20px;
+
+    &.active {
+      // background: blue;
+      width: 100%;
+      height: 50px;
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      align-items: center;
+
+      .col-right {
+        display: flex;
+        align-items: center;
+
+        .menu-copy {
+          font-family: $font-primary;
+          font-size: .8rem;
+          margin-right: .5rem;
+        }
+
+        i {
+          font-size: 1.5rem;
+        }
+
+        cursor: pointer;
+      }
+    }
+  }
+
 }

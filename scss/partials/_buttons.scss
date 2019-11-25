@@ -1,0 +1,30 @@
+@mixin db-btn {
+  min-width: 250px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  font-family: $font-primary;
+  font-size: 1.25rem;
+  line-height: calc(1.25rem * 2);
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @content;
+}
+
+.db-btn-main {
+  @include db-btn();
+  background: $color-main;
+  color: $color-dark;
+  transition: all .3s ease-in-out;
+
+
+  &:hover {
+    background: lighten($color-main, 30);
+    transition: all .3s ease-in-out;
+    animation: btnFade .5s ease-in-out infinite alternate;
+  }
+}
